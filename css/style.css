@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background: url(../img/bg.jpeg) ;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+@media(max-width:768px){
+    .container{
+        max-width: 768px;
+    }
+}
+@media(max-width:375px){
+    .container{
+        max-width: 375px;
+    }
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+@media(max-width:768px){
+    .header{
+        justify-content: space-around;
+    }
+}
+
+
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+@media(max-width:768px){
+    .logo{
+        width: 60px;
+    }
+}
+@media(max-width:768px){
+    .header__title{
+        font-size: 25px;
+    }
+}
+@media(max-width:376px){
+    .header__title{
+        display: none;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+.title{
+    font-family: 'oswald', sans-serif;
+    font-weight: 900;
+}
+
+@media(max-width:375px){
+    .header__title{
+        display: none;
+    }
+}
+button{
+    background: rgba(27, 27, 27, 0.9);
+    border-radius: 35px;
+    border: 2px solid rgba(0, 0, 0, 0.667);
+    cursor: pointer;
+    top: 0;
+    height: 80px;
+    box-shadow: 0px 2px 3px  rgb(51, 18, 73);
+    transition: 0.5s;
+}
+button:hover{
+    top: -10px;
+    background: rgba(13, 97, 18, 0.9);
+    box-shadow: 0px 1px 1px  rgb(51, 18, 73);
+}
+@media(max-width:768px){
+    button {
+        height: 50px;
+
+    }
+}
+.header__button-text{
+    margin: 0  15px 0 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #ffff;
+}
+@media(max-width:768px){
+    .header__button-text{
+        font-size: 15px;
+    }
+}
+hr{
+    margin-top: 15px;
+    background: rgba(30, 131, 17, 0.644);
+    height: 3px;
+    border-color: rgba(27, 27, 27, 0.9);
+}
+
+/* ---------------gallery---------------- */
+.photo{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+@media(max-width:768px){
+    .photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.photo__block-img{
+    max-width: 300px;
+    border-radius: 10px;
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+    transition: 0.5s;
+}
+@media(max-width:768px){
+    .photo__block{
+        width: 300px;
+        
+    }
+}
+.photo__block-img:hover{
+    transform: scale(1.1);
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(123, 204, 129);
+    margin-top: 10px;
+}
+@media(max-width:768px){
+    p{
+        font-size: 15px;
+        margin: 10px 0 10px 0;
+    }
+}
+/* ---------------info------------------ */
+h1{
+    text-align: center;
+    font-family: 'oswald', sans-serif;
+    font-weight: 900;
+    color: rgb(13, 95, 116);
+}
+@media(max-width:768px){
+    h1{
+        font-size: 20px;
+    }
+}
+
+.info__text{
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+@media(max-width:768px){
+    .info__text{
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+/* ----------------WORK--------------------------- */
+table{
+    max-width: 600px;
+    margin-top: 20px;
+    border: 3px;
+    color: #fff;
+}
+@media(max-width:768px){
+    table{
+        margin: 0 auto;
+    }
+}
+@media(max-width:376px){
+    table {
+        padding: 5px;
+    }
+}
+table td{
+    padding-top: 10px;
+    padding-right: 10px;
+    background: rgba(16, 122, 23, 0.603);
+}
+/* ------------------HOBBY---------------------- */
+.hobby__list{
+    margin-top: 20px;
+    color: #ffff;
+    list-style: none;
+}
+@media(max-width:768px){
+    .hobby__list{
+        text-align: center;
+    }
+}
+li.hobby__list{
+    padding: 5px;
+}
+li.hobby__link:before {
+    padding-right:10px;
+    font-weight: bold;
+    color: #C0C0C0;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+li.hobby__link:hover:before {
+    color: rgb(13, 97, 19);
+    content: "\2714";
+} 
+/* -------------SOCIAL------------------- */
+
+.social__list{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.social__item{
+    width: 20px;
+}
+.social__item:not(last-child){
+    margin-right: 10px;
+}
